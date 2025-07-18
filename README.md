@@ -23,7 +23,7 @@ Before installing the AgR Pipeline, ensure your system meets these requirements:
 
 ```bash
 # Clone the repository
-git clone https://github.com/indrareddy15/agr-pipeline.git
+git clone [https://github.com/indrareddy15/agr-pipeline.git](https://github.com/indrareddy15/agr-pipline.git)
 cd dir
 
 # Verify project structure
