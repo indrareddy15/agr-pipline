@@ -1,0 +1,16 @@
+[
+  {
+    "sensor_id": "sensor_003",
+    "timestamp": "2025-07-19T00:15:00.000Z",
+    "reading_type": "humidity",
+    "value": 64.41,
+    "battery_level": 72.33,
+    "location": null,
+    "anomalous_reading": false,
+    "missing_value_filled": false,
+    "outlier_corrected": false,
+    "processed_timestamp": "2025-07-18T12:21:38.438Z",
+    "daily_avg": 64.41,
+    "rolling_avg_7d": 64.41
+  }
+]

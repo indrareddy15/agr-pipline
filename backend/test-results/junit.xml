@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="12" failures="2" errors="0" time="27.492">
+  <testsuite name="Agricultural Pipeline E2E Tests" errors="0" failures="2" skipped="0" timestamp="2025-07-18T10:25:44" time="27.378" tests="12">
+    <testcase classname="Agricultural Pipeline E2E Tests › Complete Pipeline Flow" name="should process data from upload to final storage" time="1.66">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Complete Pipeline Flow" name="should handle agricultural sensor data realistically" time="1.591">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Complete Pipeline Flow" name="should handle multiple file processing workflow" time="4.086">
+      <failure>Error: expect(received).toBeGreaterThan(expected)
+
+Expected: &gt; 100
+Received:   50
+    at Object.&lt;anonymous&gt; (D:\Indra_Workings\suresat_ass\pipline\backend\tests\e2e\fullPipeline.test.js:149:50)</failure>
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Complete Pipeline Flow" name="should handle data quality issues end-to-end" time="1.6">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › System Integration Points" name="should integrate with file system correctly" time="1.336">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › System Integration Points" name="should handle database operations correctly" time="1.557">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › System Integration Points" name="should integrate logging and monitoring correctly" time="1.329">
+      <failure>Error: expect(received).toBeGreaterThan(expected)
+
+Expected: &gt; 0
+Received:   0
+    at Object.&lt;anonymous&gt; (D:\Indra_Workings\suresat_ass\pipline\backend\tests\e2e\fullPipeline.test.js:253:45)</failure>
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Error Handling and Recovery" name="should recover from file processing errors" time="5.314">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Error Handling and Recovery" name="should handle system resource constraints" time="1.432">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Error Handling and Recovery" name="should handle concurrent system load" time="1.343">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Performance and Scalability" name="should handle realistic data volumes efficiently" time="1.382">
+    </testcase>
+    <testcase classname="Agricultural Pipeline E2E Tests › Performance and Scalability" name="should scale with increasing data complexity" time="4.092">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,174 @@
+/* Agr Pipeline Frontend Styles */
+
+/* Layout overrides */
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  text-align: left;
+}
+
+/* Custom component styles */
+.dashboard-card .ant-card-body {
+  padding: 16px;
+}
+
+.upload-area {
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #1890ff;
+  background-color: #f0f8ff;
+}
+
+.upload-area.ant-upload-drag.ant-upload-drag-hover {
+  border-color: #1890ff;
+  background-color: #e6f7ff;
+}
+
+.stats-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.chart-container {
+  border-radius: 8px;
+  padding: 16px;
+  background: white;
+}
+
+/* Table customizations */
+.sensor-data-table .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+.sensor-data-table .ant-table-tbody > tr:hover > td {
+  background-color: #e6f7ff;
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeInAnimation 0.5s ease-in;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUpAnimation 0.3s ease-out;
+}
+
+@keyframes slideUpAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading states */
+.loading-overlay {
+  position: relative;
+}
+
+.loading-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    position: fixed !important;
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  .ant-layout-sider.ant-layout-sider-collapsed {
+    width: 60px !important;
+  }
+
+  .ant-layout-content {
+    margin-left: 0 !important;
+    margin-top: 64px;
+  }
+}
+
+/* Chart responsive styles */
+.recharts-wrapper {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Status indicators */
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.status-online {
+  color: #52c41a;
+}
+
+.status-offline {
+  color: #ff4d4f;
+}
+
+.status-warning {
+  color: #faad14;
+}
+
+/* Custom scrollbar for tables */
+.ant-table-body::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 3px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}

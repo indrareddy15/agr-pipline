@@ -1,0 +1,40 @@
+{
+    "name": "agr-pipeline-fullstack",
+    "version": "1.0.0",
+    "description": "Agr Pipeline with React Frontend and Node.js Backend",
+    "private": true,
+    "type": "commonjs",
+    "scripts": {
+        "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\" --names \"FRONTEND,BACKEND\" --prefix-colors \"green,blue\"",
+        "agr": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\" --names \"FRONTEND,BACKEND\" --prefix-colors \"green,blue\"",
+        "dev:backend": "cd backend && npm run dev",
+        "dev:frontend": "cd frontend && npm run dev",
+        "start": "npm run build:frontend && npm run start:backend",
+        "start:single-port": "npm run build:frontend && cd backend && npm start",
+        "start:backend": "cd backend && npm start",
+        "start:frontend": "cd frontend && npm run preview",
+        "build": "npm run build:frontend",
+        "build:frontend": "cd frontend && npm run build",
+        "install:all": "cd backend && npm install && cd ../frontend && npm install",
+        "clean": "rimraf node_modules backend/node_modules frontend/node_modules frontend/dist",
+        "lint": "cd frontend && npm run lint",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "agr",
+        "pipeline",
+        "react",
+        "nodejs",
+        "express",
+        "data-processing"
+    ],
+    "author": "Agr Pipeline Team",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=8.0.0"
+    }
+}

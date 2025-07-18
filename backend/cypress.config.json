@@ -1,0 +1,33 @@
+{
+    "e2e": {
+        "baseUrl": "http://localhost:1508",
+        "viewportWidth": 1280,
+        "viewportHeight": 720,
+        "video": true,
+        "screenshotOnRunFailure": true,
+        "supportFile": "tests/cypress/support/e2e.js",
+        "specPattern": "tests/cypress/e2e/**/*.cy.js",
+        "fixturesFolder": "tests/cypress/fixtures",
+        "downloadsFolder": "tests/cypress/downloads",
+        "videosFolder": "tests/cypress/videos",
+        "screenshotsFolder": "tests/cypress/screenshots",
+        "testIsolation": true,
+        "retries": {
+            "runMode": 2,
+            "openMode": 0
+        },
+        "env": {
+            "API_URL": "http://localhost:1508/api",
+            "UPLOAD_TIMEOUT": 30000
+        },
+        "setupNodeEvents": "tests/cypress/cypress.config.js"
+    },
+    "component": {
+        "devServer": {
+            "framework": "react",
+            "bundler": "vite"
+        },
+        "supportFile": "tests/cypress/support/component.js",
+        "specPattern": "tests/cypress/component/**/*.cy.js"
+    }
+}
